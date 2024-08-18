@@ -1,0 +1,1 @@
+# sample_static_page
