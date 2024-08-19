@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>よくあるご質問[中]</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4c69f0dc-7f09-4b4f-93cc-ab9cbebe120c" class="page sans"><header><h1 class="page-title">よくあるご質問[中]</h1><p class="page-description"></p></header><div class="page-body"><p id="1d62554c-3609-4c5e-9afe-499b1d53cba0" class="">
+</p><h1 id="035bdf61-79ca-4542-810b-cf0048540287" class="">予約について</h1><h2 id="eb565195-fe31-4182-8b8d-7f044f2ca13b" class=""><strong>予約はいつから出来ますか？</strong></h2><p id="428fa616-6fdc-453a-87bd-8d917939ef1a" class="">掲載中のイベントは時期に関わらずいつでも予約可能です。ただし、ステータスが「満席」となっているものは参加人数上限に達してしまっているため、キャンセル待ちをしていただくか、他のイベントを予約していただくことになります。</p><h2 id="b999f337-fcdd-4194-b477-c873af90565d" class=""><strong>当日予約は出来ますか？</strong></h2><p id="85805be3-9dec-4c29-81a3-f4f2187633ed" class="">参加人数上限に達していないイベントであれば、当日予約も可能です。</p><h2 id="34b0b636-b52f-4168-8ca2-ef31ad05d599" class=""><strong>予約を都合によりキャンセルしたいのですが？</strong></h2><p id="8bab720b-85a1-46d8-8ff6-754a4091ae09" class="">本予約後のキャンセルは予約したイベントの詳細画面からキャンセルができます。</p><p id="b5f9b874-2906-4cd0-8de7-0e10f196aacd" class="">また、キャンセル時のポイント還元等のポリシーはこちらをご確認ください。（→キャンセルポリシーのリンク）</p><h2 id="48ab5452-5863-48d5-9706-4d506333519c" class=""><strong>予約したイベントを忘れてしまいました</strong></h2><ul id="b5b7186f-c2aa-4939-8be5-ea2b9280d071" class="bulleted-list"><li style="list-style-type:disc">マイページをお持ちの方⇒ログインしていただき予約状況を確認してください。予約が出来てない場合は再度ご予約してください。</li></ul><ul id="f5825c92-97fa-4252-8947-6621df367326" class="bulleted-list"><li style="list-style-type:disc">マイページをお持ちでない方⇒予約センター（050-5533-1000）まで確認の電話をお入れください。</li></ul><h2 id="bb1037ef-afc0-41b9-99ea-ae393c8fcc43" class=""><strong>記載されている年齢制限について教えてください</strong></h2><p id="bc40ff1c-7aad-4ed2-9fe4-eafc3c46eb25" class="">会場とイベントによって年齢制限は異なります。<br/>参加者年齢の記載が「○歳～○歳」とある場合はその対象年齢内の方しかご参加できません。<br/>一歳でも違えばご参加致しかねます。イベントタイトルに 「○代限定企画」などと記載がある場合も同様です。<br/>対して、参加者年齢の記載が「○歳～○歳位」とある場合は、プラス2歳、マイナス2歳の方までご参加可能です。<br/>参加者年齢に「位」という表記があるかどうか、よくご確認ください。<br/></p><h2 id="e78fda3a-4f2d-46c9-bc8e-58a1056c8783" class=""><strong>事前に予約人数の確認はできますか？</strong></h2><p id="5a5b7388-ee80-44a8-ba3e-e2140b3ebbff" class="">人数は当日ギリギリまで変動する関係により、詳細についてはお伝えすることができません。</p><p id="541ed3db-7a26-4dc9-9b6d-984e39ccdd05" class="">ご了承くださいませ。</p><h1 id="250abf6b-d153-40b4-85e4-65eda10c2509" class="">イベント参加にあたって</h1><h2 id="d709b5f2-6d34-41b4-b41e-a96882105c01" class=""><strong>イベント当日の飛び入り参加は可能ですか？</strong></h2><p id="e3c60653-21a8-4c53-a666-3e3f76f5e5e3" class="">イベント開始時刻の30分前までは予約を受け付けておりますので、飛び入り参加が可能となります。ただし、ステータスが「満席」となっているイベントは予約ができません。</p><h2 id="229de442-fbe1-43c2-a863-5d3d16d59026" class=""><strong>当日準備するものはありますか？</strong></h2><p id="d5e25de3-e9d4-49f1-afef-bcaa0065898c" class="">当日必須で準備いただくものはありませんが、トークタイム中に水分が取れるよう飲み物をご準備頂くことをオススメいたします。</p><h2 id="649733e2-0ea1-4a92-8fb9-29fdb1e621e8" class=""><strong>参加費はいつ支払えば良いのですか？</strong></h2><p id="4f94b1a8-2732-4391-8e0c-85d370b5fda6" class="">参加費はイベント予約時にクレジットカード決済にてお支払いいただけます。</p><h2 id="cb72cfd1-6b2b-4df4-8cb1-20003f20d3b3" class=""><strong>参加費以外に料金は発生しますか？</strong></h2><p id="87181ecc-1874-453f-918d-b199165b9899" class="">参加費以外は一切かかりません。</p><p id="9bd6a237-49c5-435f-9ca2-8d1bd67bb017" class="">入会金・登録料・更新料・退会金等も一切発生いたしません。</p><h2 id="37ba8d9f-a0eb-4a48-a560-35e8082fc907" class=""><strong>遅刻しても参加できますか？</strong></h2><p id="d2e4b150-e467-490a-838f-1069b3f19453" class="">多少遅れましてもイベントのご参加は可能ですが、全ての異性とお話しできない場合もございますのでご了承ください。また、遅刻が重なるなど悪質性が認められる場合には強制退会などのペナルティが発生する場合がございますので、十分ご注意ください。</p><h2 id="a7f27295-063e-41e2-9d99-3352290f3a6b" class=""><strong>イベントの入場可能時間は？</strong></h2><p id="501c82c2-ebf6-4fed-9458-1ae92a6b8a55" class="">イベント開始時間の10分前から入場可能となります。</p><p id="5872f309-ea44-4d18-be71-cc805d6ecdf7" class="">開始時間ジャストに1人目のトークタイムが始まるため、お時間に余裕を持ってお越しください。</p><h2 id="25d254c6-d0de-4711-8db9-3bea83b0e43b" class=""><strong>イベントの所要時間は？</strong></h2><p id="b65cbe44-859d-419e-825e-87c2100ab68b" class="">参加人数によって多少異なりますが、イベント時間は長くても1時間程度となります。</p><h2 id="0f6cfeae-918d-4040-bb50-01dd914daafc" class=""><strong>どんな服装で参加したら良いですか？</strong></h2><p id="4211b085-bc1b-4d0c-a59f-6903bae25751" class="">服装に規定はありません。ご自宅から参加可能な完全オンライン形式ですので、部屋着でも全く問題ございません。ただし、露出が多いなど相手に不快感を与える装いはご遠慮ください。</p><h2 id="ca08c46a-ed91-4120-a804-899b7435c781" class=""><strong>イベントで知り合った人の連絡先を知りたいのですが？</strong></h2><p id="261739fb-1022-4838-a03a-e6131f995dc1" class="">イベント終了後にチアーズを通じて連絡先をお伝えすることは行っておりません。気になる方がいましたらイベント中に連絡先を交換する、またはチャットタイムなどを利用して自分の連絡先を伝えておきましょう。</p><h1 id="31cfdea2-8e28-4903-9143-b74c1e94c6e5" class="">イベント参加者について</h1><h2 id="06c5de2d-1688-4e10-8e87-e0ab78ec1ec6" class=""><strong>どのような人が参加しているのですか？</strong></h2><p id="4e3d6ecb-721f-437c-bf6b-fccdc21dfcd9" class="">チアーズは社会人を対象としたイベントのため、男性・女性共に会社員が中心で、公務員・自営業・医師・エンジニア・美容師・保育士・看護師など様々な職種の方がご参加されています。素敵なパートナーや恋人と出会うきっかけの一つとして参加されている独身男女の方々です。</p><h2 id="1c7268f3-783e-4759-8a7a-8f2c57c7d006" class=""><strong>男女の比率はどうですか？</strong></h2><p id="d0066f69-db91-4224-9262-43513a3c3ccb" class="">どのイベントも男女のバランスを重視しておりますのでご安心下さい。</p><h1 id="e43bcb6c-2cc6-453f-9d79-dc2573d8cff0" class="">マイページについて</h1><h2 id="11d47c62-d9d5-4f25-bce0-f05ad73bb720" class=""><strong>登録情報を変更したいのですが…</strong></h2><p id="dc1fa09f-740e-45cc-9b37-6c2f5cdb636d" class="">ログイン後、マイページより該当の項目を変更することができます。</p><h2 id="db900a64-378d-4f93-8cb8-cd339535027d" class=""><strong>IＤ・パスワードを忘れたのですが?</strong></h2><p id="b6fbb078-f21b-4a9e-8e5b-9a8a39922873" class="">IDはご登録時のメールアドレスになります。また、パスワードはご自身でお調べいただけます。マイページログイン画面の「パスワード忘れた方はこちら」部分からご操作の上ご確認ください。</p><p id="6048f902-dca9-4ecf-9d15-c825a1f80d9c" class="">パスワードを忘れた方はコチラ</p><h2 id="0d7aa155-fff2-4855-9750-c6c04d81d7fb" class=""><strong>マイページを削除したいのですが？（退会したい）</strong></h2><p id="62f5a83d-fa0f-47c6-b6e5-ee6b1ba6357c" class="">ログイン後、マイページより退会申請をお願いいたします。</p><h1 id="43c956f1-c5e2-4ddd-9a21-ae3b5f2c1d90" class="">イベントについて</h1><h2 id="7e4f7cde-b6a5-42d9-b2ea-6e017c578712" class=""><strong>イベントの流れを教えてください</strong></h2><p id="801966e4-ec56-4592-ba61-2e8ab99f1a5b" class="">ブース区切りとなっていて、お二人様でゆっくりとお話しをしていただける形式となっております。 個室イベントはフリータイムがなく、お1人の方と長くお話しをしていただけるのが特徴となっているため、中間の印象確認カードはございません。  また、トークタイム中に連絡先を交換していただいても結構ですが、全員とのトークタイム終了後にチャットタイムを設けている為、そちらにて連絡先の交換が行えます。</p><p id="8b586aca-7fcd-4092-bded-a335d43b568d" class="">イベントの流れはコチラ</p><h2 id="50e33b9f-fa90-4e17-8d88-b43e29083608" class=""><strong>1人と話せる時間はどのくらいですか？</strong></h2><p id="a032f160-4b78-4ae4-a1f7-ac923064e100" class="">約10分程度会話をお楽しみいただけます。</p><p id="55dc5623-4843-4e7a-9b15-8d3eb9813527" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
